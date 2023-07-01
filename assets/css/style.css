@@ -1,5 +1,48 @@
-body {
+:root {
+    --main-color: #D9E4EC;
+    --text-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 400;
 }
