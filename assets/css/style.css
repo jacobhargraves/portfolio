@@ -138,8 +138,11 @@ h1 {
 
 /* Creates grid for about section  */
 .about-content{
+    position: relative;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     display: grid; 
  
     grid-template-rows: 1fr 1fr;
@@ -147,11 +150,11 @@ h1 {
     
     gap: 0px;
     height: 100%;
+    color: black;
  }
  
  /* Centers image and styles the grid section */
 .about-image {
-    margin-left: 100px;
 
     grid-row-start: 1;
     grid-column-start: 1;
@@ -162,7 +165,9 @@ h1 {
 
 /* */
  .about-me-text {
-
+    position: absolute;
+    bottom: 50px;
+    left: 0;
     grid-row-start: 1;
     grid-column-start: 2;
  
