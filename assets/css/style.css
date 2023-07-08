@@ -73,7 +73,7 @@ body {
     border-radius: 50%;
 }
 
-.home-content h1 {
+h1 {
     position: relative;
     font-size: 60px;
     font-weight: 800;
@@ -133,3 +133,111 @@ body {
 		transform: rotate(45deg) translate(20px, 20px);
 	}
 }
+
+/* About Me section */
+
+/* Creates grid for about section  */
+.about-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+ }
+ 
+ /* Centers image and styles the grid section */
+.about-image {
+    margin-left: 100px;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+ }
+
+/* */
+ .about-me-text {
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+
+ /* */
+ .skills-text {
+ 
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
+
+ .skills-list-content {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 4px;
+    width: fit-content;
+    block-size: fit-content;    
+ }
+   
+ #skill1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
+ #skill2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+ #skill3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 4;
+    
+ }
+ #skill4 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #skill5 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+ }
+ #skill6 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+    
+ }
