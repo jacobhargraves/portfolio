@@ -176,6 +176,11 @@ h1 {
     
  }
 
+ .about-me-text h1 {
+    color: #00000052;
+    margin-bottom: 25px;
+ }
+
  /* */
  .skills-text {
  
@@ -185,6 +190,11 @@ h1 {
     grid-row-end: 3;
     grid-column-end: 3;
     
+ }
+
+ .skills-text h1 {
+    color: #00000052;
+    margin-bottom: 25px;
  }
 
  .skills-list-content {
