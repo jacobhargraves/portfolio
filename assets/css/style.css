@@ -18,6 +18,47 @@ body {
     overflow-x: hidden;
 }
 
+.custom-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: 2px solid #00000052;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.custom-button:hover {
+    color: white;
+}
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00000052;
+    z-index: -1;
+    transition: .3s;
+}
+
+.custom-button:hover:before {
+    width: 100%;
+}
+
+.custom-button:hover {
+    color: white;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -286,8 +327,8 @@ h1 {
  
     grid-row-end: 2;
     grid-column-end: 2;
-    
  }
+
  #project-1-image {
      grid-row-start: 1;
     grid-column-start: 2;
@@ -295,7 +336,13 @@ h1 {
     grid-row-end: 2;
     grid-column-end: 3;
     width: 500px;
+    transition: all 0.3s ease-in-out;
  }
+
+ #project-1-image:hover {
+    transform: scale(1.07);
+ }
+
  #project-2-content {
      grid-row-start: 2;
     grid-column-start: 1;
@@ -311,8 +358,13 @@ h1 {
     grid-row-end: 3;
     grid-column-end: 3;
     width: 500px;
-    
+    transition: all 0.3s ease-in-out;
  }
+
+ #project-2-image:hover {
+    transform: scale(1.07);
+}
+
  #project-3-content {
      grid-row-start: 3;
     grid-column-start: 1;
@@ -328,8 +380,12 @@ h1 {
     grid-row-end: 4;
     grid-column-end: 3;
     width: 500px;
-    
+    transition: all 0.3s ease-in-out;
  }
+
+#project-3-image:hover {
+    transform: scale(1.07);
+}
 
  hr {
     height: 3px;
