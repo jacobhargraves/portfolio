@@ -274,7 +274,7 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     
-    gap: 2em 10px;
+    gap: 4em 50px;
     height: 100%;
     margin-right: 10px;
     
