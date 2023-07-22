@@ -103,8 +103,8 @@ h1 {
 	display: block;
 	width: 20px;
 	height: 20px;
-	border-bottom: 2px solid var(--text-color);
-	border-right: 2px solid var(--text-color);
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
 	transform: rotate(45deg);
 	margin: -10px;
 	animation: animate 2s infinite;
@@ -344,6 +344,10 @@ h1 {
     padding: 0;
 }
 
+#contact {
+    height: 70vh;
+}
+
 .contact-content {
     display: flex;
 
@@ -387,4 +391,8 @@ h1 {
 
 .location-content {
     padding-left: 30px;
+}
+
+#contact-image {
+    margin: auto;
 }
