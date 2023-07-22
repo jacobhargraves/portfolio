@@ -201,7 +201,7 @@ h1 {
     display: grid; 
  
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
     gap: 4px;
     width: fit-content;
@@ -233,8 +233,8 @@ h1 {
     
  }
  #skill4 {
-    grid-row-start: 1;
-    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-column-start: 1;
  
     grid-row-end: 2;
     grid-column-end: 5;
@@ -242,7 +242,7 @@ h1 {
  }
  #skill5 {
     grid-row-start: 2;
-    grid-column-start: 1;
+    grid-column-start: 2;
  
     grid-row-end: 3;
     grid-column-end: 2;
@@ -250,7 +250,7 @@ h1 {
  }
  #skill6 {
     grid-row-start: 2;
-    grid-column-start: 2;
+    grid-column-start: 3;
  
     grid-row-end: 3;
     grid-column-end: 3;
