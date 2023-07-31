@@ -65,23 +65,29 @@
         </a>
     </section>
     <section id="about">
-        <div class="about-content">
-            <div class="about-image">
+        <div class="row about-content">
+            <div class="col-lg-5 about-image">
                 <img id="about-image-content" src="assets/images/me-standing.jpeg" width="400px">
             </div>
-            <div class="about-me-text">
-                <h1>about.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-            </div>
-            <div class="skills-text">
-                <h1>skills.</h1>
-                <div class="skills-list-content">
-                    <p id="skill1">HTML</p>
-                    <p id="skill2">CSS</p>
-                    <p id="skill3">JavaScript</p>
-                    <p id="skill4">Bootstrap</p>
-                    <p id="skill5">NodeJS</p>
-                    <p id="skill6">ExpressJS</p>
+            <div class="col-lg-7">
+                <div class="about-me-text">
+                    <h1>about.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                </div>
+                <div class="skills-text">
+                    <h1>skills.</h1>
+                    <div class="skills-list-content">
+                        <div class="row">
+                            <p class="col" id="skill1">HTML</p>
+                            <p class="col" id="skill2">CSS</p>
+                            <p class="col" id="skill3">JavaScript</p>
+                        </div>
+                        <div class="row">
+                            <p class="col" id="skill4">Bootstrap</p>
+                            <p class="col" id="skill5">NodeJS</p>
+                            <p class="col" id="skill6">ExpressJS</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,64 +97,79 @@
             <h1>portfolio.</h1>
         </div>
         <div class="portfolio-content">
-            <div class="portfolio-grid">
-                <div id="project-1-content">
+            <div class="row project-content">
+                <div class="project-1-content col-lg-7">
                         <h3>E-Commerce Back End</h3>
                         <hr/>
                         <p>Stores and retrieves e-commerce information using MySQL, NodeJS, and Express.</p>
                         <a href="https://github.com/jacobhargraves/e-commerce-back-end" class="custom-button">View on GitHub</a>
                 </div>
-                <a href="https://github.com/jacobhargraves/e-commerce-back-end"><img id="project-1-image" src="assets/images/project1.png"></img></a>
-                <div id="project-2-content">
+                <div class="col-lg-5">
+                    <a href="https://github.com/jacobhargraves/e-commerce-back-end"><img id="project-1-image" src="assets/images/project1.png"></img></a>
+                </div>
+            </div>
+            <div class="row project-content">
+                <div class="project-2-content col-lg-7">
                         <h3>Meal Planner</h3>
                         <hr/>
                         <p>Designed front end application to calculate a user's needed caloric intake using Rapid API fitness-calculator as well as plan meals using Edamam API.</p>
                         <a href="https://github.com/Mateocassidy/Meal-Planner-Project" class="custom-button">View on GitHub</a>
                 </div>
-                <a href="https://github.com/Mateocassidy/Meal-Planner-Project"><img id="project-2-image" src="assets/images/project2.png"></img></a>
-                <div id="project-3-content">
+                <div class="col-lg-5">
+                    <a href="https://github.com/Mateocassidy/Meal-Planner-Project"><img id="project-2-image" src="assets/images/project2.png"></img></a>
+                </div>
+            </div>
+            <div class="row project-content">
+                <div class="project-3-content col-lg-7">
                         <h3>Weather Dashboard</h3>
                         <hr/>
                         <p>Simple weather app using Open Weather Map API which allows a user find a city's weather data. A five-day weather forcast is shown along with the current weather. Recent searches are stored using local storage for quick access.</p>
                         <a href="https://github.com/jacobhargraves/weather-dashboard" class="custom-button">View on GitHub</a>
                 </div>
-                <a href="https://github.com/jacobhargraves/weather-dashboard"><img id="project-3-image" src="assets/images/project3.png"></img></a>
+                <div class="col-lg-5">
+                    <a href="https://github.com/jacobhargraves/weather-dashboard"><img id="project-3-image" src="assets/images/project3.png"></img></a>
+                </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        <div class="contact-content">
+        <div class="contact-header">
             <h1>contact.</h1>
-            <div class="contact-info">
-                <div class="email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                    </svg>
-                    <div class="email-content">
-                        <h3>Email:</h3>
-                        <p>jacobhargraves1@gmail.com</p>
+        </div>
+            <div class="row">
+                <div class="contact-info col-lg-7">
+                    <div class="email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                        <div class="email-content">
+                            <h3>Email:</h3>
+                            <p>jacobhargraves1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <div class="phone-content">
+                            <h3>Phone:</h3>
+                            <p>(208) 821-2517</p>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                        <div class="location-content">
+                            <h3>Location:</h3>
+                            <p>Idaho</p>
+                        </div>
                     </div>
                 </div>
-                <div class="phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                    <div class="phone-content">
-                        <h3>Phone:</h3>
-                        <p>(208) 821-2517</p>
-                    </div>
-                </div>
-                <div class="location">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                      </svg>
-                    <div class="location-content">
-                        <h3>Location:</h3>
-                        <p>Idaho</p>
-                    </div>
-                </div>
+                <div class="col-lg-5">
+                    <img id="contact-image" src="assets/images/portrait.jpeg"></img>
+                </div>    
             </div>
-            <img id="contact-image" src="assets/images/portrait.jpeg" width="500px"></img>
         </div>
     </section>
 </body>
