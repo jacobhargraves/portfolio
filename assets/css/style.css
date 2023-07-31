@@ -174,3 +174,27 @@ h1 {
 .skills-list-content {
     width: fit-content;
 }
+
+#project-1-image {
+    transition: all 0.3s ease-in-out;
+ }
+
+ #project-1-image:hover {
+    transform: scale(1.07);
+ }
+
+ #project-2-image {
+    transition: all 0.3s ease-in-out;
+ }
+
+ #project-2-image:hover {
+    transform: scale(1.07);
+}
+
+ #project-3-image {
+    transition: all 0.3s ease-in-out;
+ }
+
+#project-3-image:hover {
+    transform: scale(1.07);
+}
