@@ -37,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 150px;
-    border: 2px solid #00000052;
+    border: 2px solid #265B8B;
     border-radius: 8px;
     font-size: 15px;
     color: black;
@@ -45,7 +45,7 @@ body {
     font-weight: 700;
     z-index: 1;
     overflow: hidden;
-    transition: .3s;
+    transition: .5s;
 }
 
 .custom-button:hover {
@@ -59,9 +59,9 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #00000052;
+    background-color: #265B8B;
     z-index: -1;
-    transition: .3s;
+    transition: .5s;
 }
 
 .custom-button:hover:before {
@@ -73,6 +73,7 @@ body {
 }
 
 .header {
+    background-color: #265B8B;
     position: fixed;
     width: 100%;
     display: flex;
@@ -261,4 +262,29 @@ h1 {
     .hidden {
         transition: none;
     }
+}
+
+/* hover animations referencing https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
