@@ -72,6 +72,20 @@ body {
     color: white;
 }
 
+.deployed-btn {
+    color: white;
+    border: 2px solid #265B8B;
+    background-color: #265B8B;
+}
+
+.deployed-btn:hover {
+    color: black;
+}
+
+.deployed-btn::before {
+    background-color: white;
+}
+
 .header {
     background-color: #265B8B;
     position: fixed;
@@ -263,6 +277,12 @@ h1 {
         transition: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #scroll-animate {
+      display: none;
+    }
+  }
 
 /* hover animations referencing https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
 .hover-underline-animation {
