@@ -278,6 +278,12 @@ h1 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    #scroll-animate {
+      display: none;
+    }
+  }
+
 /* hover animations referencing https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
 .hover-underline-animation {
     display: inline-block;
