@@ -87,8 +87,8 @@ body {
 }
 
 .header {
-    background-color: #265B8B;
-    position: fixed;
+    background-color: transparent;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -117,7 +117,7 @@ body {
     align-items: center;
     padding: 0 10%;
     flex-direction: column;
-    background: linear-gradient(-45deg, #0B1C48, #84C7F2, #265B8B);
+    background: linear-gradient(-45deg, #000000, #15232c, #91a9c0);
     animation: background-gradient 10s ease infinite;
     background-size: 400% 400%;
     color: white;
@@ -225,6 +225,14 @@ h1 {
  }
 
 #project-3-image:hover {
+    transform: scale(1.07);
+}
+
+#project-4-image {
+    transition: all 0.3s ease-in-out;
+ }
+
+#project-4-image:hover {
     transform: scale(1.07);
 }
 
