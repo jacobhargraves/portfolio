@@ -204,6 +204,14 @@ h1 {
     width: fit-content;
 }
 
+#project-0-image {
+    transition: all 0.3s ease-in-out;
+ }
+
+ #project-0-image:hover {
+    transform: scale(1.07);
+ }
+
 #project-1-image {
     transition: all 0.3s ease-in-out;
  }
